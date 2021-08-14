@@ -1,0 +1,221 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminmaster.master.cs" Inherits="adminmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+    body 
+{
+    background:#f2f2f2;
+}
+
+#head
+{
+    width:900px;
+    height:80px;
+    border:solid 1px #9B0033;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+#main
+{
+    width:900px;
+    height:520px;
+    border:solid 1px #9B0033;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#left
+{
+    width:213px;
+    height:520px;  
+    float:left;
+    
+    }
+    
+    #right
+{
+    width:685px; height:520px;  
+     border:solid 0px #9B0033;
+    float:right;
+    margin-left: 0px;
+}
+    #login
+    {
+        width:300px;
+        height:250px;
+        margin: 0 auto;
+        margin-top:70px;
+        
+        }
+        
+     .tbl
+     {
+         width:100%;
+         border:solid 1px #9B0033;
+         
+         }
+         
+         .tblhead
+         {height:35px;
+          color:#fff;
+          background:#9B0033;
+          font-size:medium;
+          font-weight:bold;
+    text-align: center;
+}
+
+.txt
+{
+    width:120px;
+    border:solid 1px #9B0033;
+    
+    }
+    
+    .btn
+    {
+        background:#9B0033;
+        color:#fff;
+         font-weight:bold;
+        border:solid 2px #9B0033;
+        cursor:pointer;
+        }
+         .btn:hover
+    {
+        background:#fff;
+        color:#9B0033;
+         font-weight:bold;
+        border:solid 2px #9B0033;
+        }
+    
+
+        .auto-style2 {
+            height: 19px;
+        }
+    
+
+        .auto-style3 {
+            width: 176px;
+        }
+        .auto-style4 {
+            height: 19px;
+            width: 176px;
+        }
+        .auto-style5 {
+            height: 322px;
+            width: 176px;
+        }
+    
+
+        .auto-style6 {
+            width: 195px;
+        }
+        .auto-style7 {
+            width: 141px;
+        }
+        .auto-style8 {
+            width: 192px;
+        }
+        .auto-style9 {
+            height: 4px;
+            width: 176px;
+        }
+        .auto-style10 {
+            height: 4px;
+        }
+        .auto-style11 {
+            height: 1px;
+            width: 176px;
+        }
+        .auto-style12 {
+            height: 1px;
+        }
+    
+
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="text-align: center">
+        &nbsp;
+        <table style="z-index: 100; left: 14px; width: 1139px; position: absolute; top: 15px; text-align: center;">
+            <tr>
+                <td class="auto-style3">
+                </td>
+                <td style="text-align: center;">
+                    <span style="font-family: Algerian"><span style="font-size: 48pt; color: #FF0000;">Catch</span><span style="font-size: 32pt; color: #CC0066;">The</span><span
+                        style="font-size: 48pt"></span><span style="font-size: 32pt; color: #00CC00;">Match</span></span></td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                </td>
+                <td style="text-align: center;">
+                    <span style="font-size: 16pt; font-weight: 700; color: #CC66FF;">&nbsp;WelCome to Admin Panel </span></td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style9">
+                </td>
+                <td style="text-align: center" class="auto-style10">
+                </td>
+                <td class="auto-style10">
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style11">
+                </td>
+                <td colspan="2" style="text-align: center" class="auto-style12">
+                    <table>
+                        <tr>
+                            <td class="auto-style8">
+                                <asp:Button ID="Button1" runat="server" BackColor="#E0E0E0" Font-Bold="False" Font-Names="Arial Rounded MT Bold"
+                                    Font-Size="Medium" Height="33px"  Text="ADD ADMIN" CausesValidation="False" OnClick="Button1_Click1" Width="113px" />&nbsp; </td>
+                            <td class="auto-style7">
+                                <asp:Button ID="Button2" runat="server" BackColor="#E0E0E0" Font-Bold="False" Font-Names="Arial Rounded MT Bold"
+                                    Font-Size="Medium" Height="34px"  Text="FeedBack Reports" CausesValidation="False" OnClick="Button2_Click" Width="155px" /></td>
+                            <td class="auto-style6">
+                                <asp:Button ID="Button4" runat="server" BackColor="#E0E0E0" Font-Bold="False" Font-Names="Arial Rounded MT Bold"
+                                    Font-Size="Medium" Height="34px"  Text="Delete User" CausesValidation="False" OnClick="Button4_Click" Width="116px" /></td>
+                            <td style="width: 100px">
+                                <asp:Button ID="Button6" runat="server" BackColor="#E0E0E0" Font-Bold="False" Font-Names="Arial Rounded MT Bold"
+                                    Font-Size="Medium" Height="34px"  Text="REPORTS" CausesValidation="False" style="margin-right: 22px" Width="96px" OnClick="Button6_Click" /></td>
+                            <td colspan="3">
+                                <asp:Button ID="Button3" runat="server" BackColor="#E0E0E0" Font-Bold="False" Font-Names="Arial Rounded MT Bold"
+                                    Font-Size="Medium" Height="34px"  Text="PASSWORD" CausesValidation="False" OnClick="Button3_Click" Width="117px"  />&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Button ID="Button7" runat="server" Font-Size="Medium" Height="31px" OnClick="Button7_Click" style="font-weight: 700" Text="Logout" Width="90px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                </td>
+                <td style="text-align: center" class="auto-style2">
+                </td>
+                <td class="auto-style2">
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                </td>
+                <td style="height: 322px; text-align: center;" colspan="2" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        &nbsp;</div>
+
+    </form>
+</body>
+</html>
